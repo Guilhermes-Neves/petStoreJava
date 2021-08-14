@@ -52,7 +52,6 @@ public class Pet {
                 .log().all()
                 .statusCode(200)
                 .body("name", is("Thor"))
-                .body("status", is("available"))
                 .body("category.id", is(1))
                 .body("category.name", is("dog"))
         //.extract()
